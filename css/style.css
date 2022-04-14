@@ -8,6 +8,8 @@
     --text-color: #757575;
     --footer-color: #FFFFFF;
     --bcg-color: #2F303A;
+    --padding-top: 94px;
+    --padding-bottom: 94px;
 
 
 }
@@ -15,7 +17,14 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -41,6 +50,15 @@ body {
     list-style: none;
 }
 
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid salmon;
+
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -55,7 +73,10 @@ body {
   }
 
 /*-------------HEADER---------------*/
-
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .header-navigation-link {
     font-weight: 500;
     font-size: 14px;
@@ -89,8 +110,8 @@ body {
 /*-------------HERO---------------*/
 
 .hero-content{
-    background: var(--bcg-color)
-
+    background: var(--bcg-color);
+   /*- padding: 200px; 452px; 30px;-*/
 }
 .title {
     font-weight: 900;
@@ -100,6 +121,10 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--main-title-color);
+    margin-bottom: 30px;
+    max-width: 696px;
+    
+
 }
 
 .btn {
@@ -114,6 +139,7 @@ body {
     background-color: #2196F3;
     color: var(--btn-color);
     cursor: pointer;
+    
 }
 
 .btn:hover, 
@@ -123,6 +149,15 @@ body {
 
 /*-------------WORKS---------------*/
 
+/*.section {
+
+}*/
+
+.features-list {
+    padding-top: var(--padding-top);
+    padding-bottom: 50px;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -130,6 +165,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+    padding-top: var(--padding-top);
+    padding-bottom: 50px;
 }
 
 .features-title {
@@ -149,21 +186,33 @@ body {
 
 /*-------------TEAM---------------*/
 
+.section-title {
+    padding-top: var(--padding-top);
+    padding-bottom: 50px;
+}
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+
 }
 .team-text {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--text-color);
+
 }
 
 /*------------PORTFOLIO---------------*/
+
+.portfolio-list {
+    padding-top: var(--padding-top);
+    padding-bottom: 50px;
+}
 
 .portfolio-filtres-btn {
     font-family: 'Roboto';
@@ -199,6 +248,8 @@ body {
 
 /*------------FOOTER---------------*/
 
+
+
 .footer-address {
     font-family: 'Roboto';
     font-weight: 400;
@@ -206,6 +257,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--footer-color);
+   
 }
 
 .footer-link {
