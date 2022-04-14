@@ -1,0 +1,231 @@
+:root {
+    --header-color: #212121;
+    --header-link-color: #757575;
+    --main-title-color: #FFFFFF;
+    --second-title-color: #212121;
+    --btn-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --text-color: #757575;
+    --footer-color: #FFFFFF;
+    --bcg-color: #2F303A;
+
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-dark {
+    color: black;
+}
+ 
+.logo-light {
+    color: var(--btn-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+/*-------------HEADER---------------*/
+
+.header-navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-color); 
+}
+
+.header-navigation-link:hover, 
+.header-navigation-link:focus {
+    color: var(--accent-color);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-link-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.active {
+    color: var(--accent-color);
+}
+
+/*-------------HERO---------------*/
+
+.hero-content{
+    background: var(--bcg-color)
+
+}
+.title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--main-title-color);
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn:focus {
+    color: var(--btn-color);
+}
+
+/*-------------WORKS---------------*/
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--text-color) ;
+}
+
+/*-------------TEAM---------------*/
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*------------PORTFOLIO---------------*/
+
+.portfolio-filtres-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    
+    background-color: var(--btn-color);
+    color: var(--header-color);
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn:focus {
+    color: var(--btn-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--header-link-color);
+}
+
+/*------------FOOTER---------------*/
+
+.footer-address {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--footer-color);
+}
+
+.footer-link {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-content {
+    background: var(--bcg-color);
+}
+
+
+.footer-link:hover, 
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-address:hover, 
+.footer-address:focus {
+    color: var(--accent-color);
+}
