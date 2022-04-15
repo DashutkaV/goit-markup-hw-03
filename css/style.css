@@ -17,6 +17,7 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -25,6 +26,7 @@ ul, ol {
     padding-left: 0;
     margin: 0;
 }
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -39,7 +41,11 @@ ul, ol {
 }
  
 .logo-light {
-    color: var(--btn-color);
+    color: var(--footer-color);
+}
+
+img {
+    display: block;
 }
 
 .link {
@@ -111,6 +117,8 @@ ul, ol {
 
 .hero-content{
     background: var(--bcg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
    /*- padding: 200px; 452px; 30px;-*/
 }
 .title {
@@ -146,28 +154,13 @@ ul, ol {
 .btn:focus {
     color: var(--btn-color);
 }
+/*------------features----------*/
 
-/*-------------WORKS---------------*/
-
-/*.section {
-
-}*/
-
-.features-list {
+.features-content {
     padding-top: var(--padding-top);
     padding-bottom: 50px;
 }
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
-    padding-top: var(--padding-top);
-    padding-bottom: 50px;
-}
 
 .features-title {
     font-weight: 700;
@@ -176,19 +169,50 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-title-color);
+    margin-bottom: 10px;
 }
 .features-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color:var(--text-color) ;
+    color:var(--text-color);
+    max-width: 270px;
+
+}
+
+/*-------------WORKS---------------*/
+
+.works {
+    padding-top: var(--padding-top);
+    padding-bottom: 94px;
+}
+
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+    margin-bottom: 50px;
+
 }
 
 /*-------------TEAM---------------*/
 
-.section-title {
+.team {
     padding-top: var(--padding-top);
-    padding-bottom: 50px;
+    padding-bottom: 94px;
+}
+
+.team-title-section {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+    margin-bottom: 50px;
 }
 
 .team-title {
@@ -197,7 +221,11 @@ ul, ol {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+    margin-bottom: 10px;
 
+}
+.team-img {
+    margin-bottom: 30px;
 }
 .team-text {
     font-size: 16px;
@@ -209,9 +237,10 @@ ul, ol {
 
 /*------------PORTFOLIO---------------*/
 
-.portfolio-list {
+.portfolio {
     padding-top: var(--padding-top);
-    padding-bottom: 50px;
+    padding-bottom: var(--padding-bottom);
+
 }
 
 .portfolio-filtres-btn {
@@ -219,8 +248,7 @@ ul, ol {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em;    
     background-color: var(--btn-color);
     color: var(--header-color);
     cursor: pointer;
@@ -231,6 +259,9 @@ ul, ol {
     color: var(--btn-color);
     background-color: var(--accent-color);
 }
+.portfolio-img{
+    margin-bottom: 20px;
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -238,6 +269,7 @@ ul, ol {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-title-color);
+    margin-bottom: 4px;
 }
 .portfolio-text {
     font-size: 16px;
