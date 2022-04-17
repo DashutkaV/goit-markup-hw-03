@@ -78,11 +78,50 @@ img {
     margin: -1px;
   }
 
+.btn {
+    min-width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    color: var(--btn-color);
+    cursor: pointer;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.btn:hover, 
+.btn:focus {
+    color: var(--btn-color);
+}  
+
 /*-------------HEADER---------------*/
+
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation-list {
+    display: flex;
+}
+
 .header-navigation-link {
     font-weight: 500;
     font-size: 14px;
@@ -91,9 +130,22 @@ img {
     color: var(--header-color); 
 }
 
+.header-navigation-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header-navigation-link:hover, 
 .header-navigation-link:focus {
     color: var(--accent-color);
+}
+
+.header-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .header-link {
@@ -119,8 +171,8 @@ img {
     background: var(--bcg-color);
     padding-top: 94px;
     padding-bottom: 94px;
-   /*- padding: 200px; 452px; 30px;-*/
 }
+
 .title {
     font-weight: 900;
     font-size: 44px;
@@ -128,32 +180,16 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:var(--main-title-color);
+    color: var(--main-title-color);
     margin-bottom: 30px;
     max-width: 696px;
-    
-
 }
 
-.btn {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    background-color: #2196F3;
-    color: var(--btn-color);
-    cursor: pointer;
-    
+.hero-btn {
+        margin: 0 auto;
+        display: block;
 }
 
-.btn:hover, 
-.btn:focus {
-    color: var(--btn-color);
-}
 /*------------features----------*/
 
 .features-content {
@@ -161,6 +197,14 @@ img {
     padding-bottom: 50px;
 }
 
+.features-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .features-title {
     font-weight: 700;
@@ -187,7 +231,6 @@ img {
     padding-bottom: 94px;
 }
 
-
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -198,6 +241,16 @@ img {
     margin-bottom: 50px;
 
 }
+
+.works-list {
+    display: flex;
+}
+
+.works-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+
 
 /*-------------TEAM---------------*/
 
@@ -210,6 +263,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 50px;
@@ -224,6 +278,20 @@ img {
     margin-bottom: 10px;
 
 }
+.team-list {
+    display: flex;
+    margin-left: -30px;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+}
+/*-.team-item:not(:first-child) {
+    margin-left: 30px;
+}--*/
+
 .team-img {
     margin-bottom: 30px;
 }
@@ -240,18 +308,31 @@ img {
 .portfolio {
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
+}
 
+.portfolio-filtres {
+    display: flex;
+    align-items: center;
+
+}
+.portfolio-filtres-item {
+    padding-left: 8px;
 }
 
 .portfolio-filtres-btn {
     font-family: 'Roboto';
-    font-weight: 500;
+    max-width: 100%;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;    
     background-color: var(--btn-color);
     color: var(--header-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: inline;
+    padding: 6px 22px;
+    margin-bottom: 48px;
 }
 
 .btn:hover, 
@@ -259,6 +340,20 @@ img {
     color: var(--btn-color);
     background-color: var(--accent-color);
 }
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.portfolio-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 .portfolio-img{
     margin-bottom: 20px;
 }
