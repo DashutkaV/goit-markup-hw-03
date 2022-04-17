@@ -10,8 +10,6 @@
     --bcg-color: #2F303A;
     --padding-top: 94px;
     --padding-bottom: 94px;
-
-
 }
 
 body {
@@ -76,11 +74,9 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 .btn {
-    min-width: 200px;
-    height: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -89,12 +85,12 @@ img {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: var(--btn-color);
     cursor: pointer;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--accent-color);
     border-radius: 4px;
+    border: transparent
 }
 
 .btn:hover, 
@@ -107,6 +103,7 @@ img {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
+    border: 1px solid #ECECEC
 }
 
 .header-logo {
@@ -169,8 +166,8 @@ img {
 
 .hero-content{
     background: var(--bcg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .title {
@@ -186,8 +183,11 @@ img {
 }
 
 .hero-btn {
-        margin: 0 auto;
-        display: block;
+    margin: 0 auto;
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*------------features----------*/
@@ -221,14 +221,13 @@ img {
     letter-spacing: 0.03em;
     color:var(--text-color);
     max-width: 270px;
-
 }
 
 /*-------------WORKS---------------*/
 
 .works {
     padding-top: var(--padding-top);
-    padding-bottom: 94px;
+    padding-bottom: var(--padding-bottom);
 }
 
 .section-title {
@@ -239,7 +238,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 50px;
-
 }
 
 .works-list {
@@ -250,23 +248,12 @@ img {
     margin-left: 30px;
 }
 
-
-
 /*-------------TEAM---------------*/
 
 .team {
     padding-top: var(--padding-top);
-    padding-bottom: 94px;
-}
-
-.team-title-section {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
-    margin-bottom: 50px;
+    padding-bottom: var(--padding-bottom);
+    background: #F5F4FA;
 }
 
 .team-title {
@@ -276,8 +263,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     margin-bottom: 10px;
-
 }
+
 .team-list {
     display: flex;
     margin-left: -30px;
@@ -300,7 +287,6 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--text-color);
-
 }
 
 /*------------PORTFOLIO---------------*/
@@ -313,8 +299,10 @@ img {
 .portfolio-filtres {
     display: flex;
     align-items: center;
-
+    width: auto; 
+    justify-content: center
 }
+
 .portfolio-filtres-item {
     padding-left: 8px;
 }
@@ -325,20 +313,25 @@ img {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;    
-    background-color: var(--btn-color);
+    background-color: #F5F4FA;
     color: var(--header-color);
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     display: inline;
     padding: 6px 22px;
     margin-bottom: 48px;
+
+}
+
+.activate {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover, 
 .btn:focus {
     color: var(--btn-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .portfolio-list {
@@ -352,6 +345,8 @@ img {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 
 .portfolio-img{
@@ -375,6 +370,11 @@ img {
 
 /*------------FOOTER---------------*/
 
+.footer-content {
+    background: var(--bcg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 
 .footer-address {
@@ -394,10 +394,6 @@ img {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-content {
-    background: var(--bcg-color);
-}
-
 
 .footer-link:hover, 
 .footer-link:focus {
